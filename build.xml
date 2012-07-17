@@ -316,6 +316,7 @@ You have to specify the Ivy to install with one of the following property:
         </fail>
         <mkdir dir="${ivy.work.dir}/distrib" />
         <property name="ivy.zip.url" value="${mirror.url}/ant/ivy/${ivy.version}/apache-ivy-${ivy.version}-bin.zip" />
+        <mkdir dir="${basedir}/dependencies" />
         <get src="${ivy.zip.url}" usetimestamp="true" dest="${basedir}/dependencies/apache-ivy-${ivy.version}-bin.zip" verbose="true" />
         <unzip overwrite="true" src="${basedir}/dependencies/apache-ivy-${ivy.version}-bin.zip" dest="${ivy.work.dir}/distrib" />
         <path id="ivy.jar.path">
