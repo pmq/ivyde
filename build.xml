@@ -342,7 +342,7 @@ You have to specify the Ivy to install with one of the following property:
     </target>
 
     <target name="check-ivy-installed" depends="list-installed-ivy">
-        <fail message="No Ivy is installed. Please run 'ant install-ivy first'." unless="ivy.installed" />
+        <fail message="No Ivy is installed. Please run 'ant install-ivy' first." unless="ivy.installed" />
     </target>
 
     <!-- 
